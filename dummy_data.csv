@@ -1,0 +1,65 @@
+see also,IB/OB Investment Case,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+Inputs,,,,Daily Peak Volumes (with presorting),,,,,,,Daily Peak Volumes (w/o presorting),,,,,,,
+Hourly rate,,€24.50,,Year,,2026,2027,2028,2029,,Year,,2026,2027,2028,2029,,
+Working hours per day,,18,,Incremental Hourly S1 Sort Required,,"12,697","6,431","7,663","8,597",,Incremental Hourly S1 Sort Required,,"17,508","23,490","28,655","31,019",,
+Working hours per day per worker,,6.7,,Incremental Hourly S2 Sort Required,,0,"3,465","7,168","8,797",,Incremental Hourly S2 Sort Required,,0,"3,465","7,168","8,797",,
+Working days per year,,312,,Incremental S1 Sort,,"228,539","310,510","380,257","412,625",,Incremental S1 Sort,,"315,149","422,815","515,783","558,347",<-- excluding Monk conveyor,
+Peak months per year,,4,,Incremental S2 Sort,,0,"62,361","129,023","158,349",,Incremental S2 Sort,,0,"62,361","129,023","158,349",<-- excluding Libiao platform,
+Off-peak vs peak volumes,,50%,,S2 presorted %,,49%,47%,46%,46%,,S2 presorted %,,0%,0%,0%,0%,,
+YoY growth,,30%,,S1 on Monk,,0,0,0,0,,S1 on Monk,,0,0,0,0,<-- assuming Monk conveyor removed,
+,,,,S2 on Libiao,,"225,000","225,000","225,000","225,000",,S2 on Libiao,,"225,000","225,000","225,000","225,000",<-- assuming 12.5K uph over 18 hours,
+,,,,Total S1 Sort,,"228,539","310,510","380,257","412,625",,Total S1 Sort,,"315,149","422,815","515,783","558,347",<-- based on Q4'25 capacity model,
+,,,,Total S2 Sort,,"211,757","287,361","354,023","383,349",,Total S2 Sort,,"211,757","287,361","354,023","383,349",<-- based on Q4'25 capacity model,
+,,,,,,,,,,,,,,,,,,
+Scenario,Scenario,,,Manual S1+S2 Sort,,,Option A - Add and upgrade LYO1 baby platform + Manual S2 Sort,,,Option B -  Add a second-hand sorter from Bowe (vertical sorter) + Manual S2 sort,,,Option C - Add a second-hand sorter from Transitic (split-tray sorter) + Manual S2 Sort,,,Option D - New Eurosort solution,,
+,% downtime,,,0%,,,5%,,,5%,,,5%,,,5%,,
+,% parcels to PS,,,2%,,,5%,,,5%,,,5%,,,5%,,
+,% non-robotable/conveyable parcels to PS,,,0%,,,2%,,,2%,,,2%,,,2%,,
+,% damaged/non readeable parcels to PS,,,2%,,,2%,,,2%,,,2%,,,2%,,
+,% robotable/conveyable parcels to PS,,,0%,,,1%,,,1%,,,1%,,,1%,,
+,Process,Task,Volumes,UPH,HC,CPP,UPH,HC,CPP,UPH,HC,CPP,UPH,HC,CPP,UPH,HC,CPP
+Headcount,Inbound,Dock operative,S1+S2 presorted,"7,300",10,€0.01,"7,300",10,€0.01,"7,300",10,€0.01,"7,300",10,€0.01,"7,300",10,€0.01
+,,Cage waterspider inbound,S1,"2,400",26,€0.03,"2,400",26,€0.03,"2,400",26,€0.03,"2,400",26,€0.03,"2,400",26,€0.03
+,,Pallet waterspider,S1+S2 presorted,"3,900",19,€0.02,"3,900",19,€0.02,"3,900",19,€0.02,"3,900",19,€0.02,"3,900",19,€0.02
+,,"Conveyor feeder (conveyor, manual PS)",S1,,,,,,,3500,18,€0.02,3500,18,€0.02,,,
+,,"Conveyor feeder (conveyor, no manual PS)",S1+S2,,,,,,,,,,,,,"3,500",24,€0.03
+,,Platform feeder (robot),S1+S2,,,,"1,950",27,€0.03,,,,,,,,,
+,Sortation,Manual mid-mile sort,S0,500,124,€0.13,,,,,,,,,,,,
+,,Manual mid-mile sort,S1,500,124,€0.13,,,,,,,,,,,,
+,,Parcels inductor (manual PS),S1,,,,,,,"1,000",62,€0.06,"1,000",62,€0.06,,,
+,,"Parcels inductor (conveyor, no manual PS)",S1+S2,,,,,,,,,,,,,"1,625",53,€0.05
+,,Parcel inductor (robot),S1+S2,,,,800,107,€0.11,,,,,,,,,
+,,Manual point sort + Bag off-loader,S2,350,68,€0.07,350,68,€0.07,350,68,€0.07,350,68,€0.07,,,
+,,Pallet off-loader (manual PS),S1,"1,750",35,€0.04,"1,750",35,€0.04,"1,750",35,€0.04,"1,750",35,€0.04,,,
+,,Cage waterspider (manual PS),S2,"1,750",14,€0.01,"1,750",14,€0.01,"1,750",14,€0.01,"1,750",14,€0.01,,,
+,,Pallet off-loader (no manual PS)*,S1+S2 not presorted,,,,,,,,,,,,,"1,200",62,€0.06
+,,Bag off-loader (no manual PS)*,S2,,,,,,,,,,,,,"1,200",20,€0.02
+,Outbound,Cage waterspider outbound*,S2,"2,400",10,€0.01,"2,400",10,€0.01,"2,400",10,€0.01,"2,400",10,€0.01,"2,400",10,€0.01
+,,FIFO operatives*,S2,"1,800",13,€0.01,"1,800",13,€0.01,"1,800",13,€0.01,"1,800",13,€0.01,"1,800",13,€0.01
+,Problem solvers,,S1,60,21,€0.02,60,52,€0.05,60,52,€0.05,60,52,€0.05,60,52,€0.05
+,Team leads,,3 HC per shift,Fixed,9,€0.01,Fixed,9,€0.01,Fixed,9,€0.01,Fixed,9,€0.01,Fixed,9,€0.01
+,Buffer vendor HC underestimates,,10%,,,,,,,,,,,,,,,
+,Break/SoS,,30min per HC,Fixed,34,€0.03,Fixed,28,€0.03,Fixed,24,€0.02,Fixed,24,€0.02,Fixed,21,€0.02
+,Downtime,,Based on downtime %,,,,,19,€0.02,,17,€0.02,,17,€0.02,,15,€0.02
+,2029 Peak,,,47,505,€0.52,54,436,€0.45,63,375,€0.39,63,375,€0.39,71,333,€0.34
+,2029 Off-peak,,,47,253,€0.52,54,218,€0.45,63,188,€0.39,63,188,€0.39,71,167,€0.34
+Financials,Yearly Maintenance Costs,,,€0,,,"€61,600",,,"€100,000",,,"€150,000",,,"€200,000",,
+,2029 HC cost,,,"€46,339,679",,,"€40,008,467",,,"€34,404,312",,,"€34,404,312",,,"€30,590,341",,
+,Automation Capex,,,,,,"€1,000,000",,,"€730,000",,,"€1,000,000",,,"€2,756,000",,
+,Automation Capex - Robots/Sorter,,,,,,,,,,,,,,,,,
+,Automation Capex - Platform (sourcing + commissioning),,,,,,,,,,,,,,,,,
+,Automation Capex - Induction Stations,,,,,,,,,,,,,,,,,
+,Automation Capex - Tipper,,,,,,,,,,,,,,,,,
+,ROI vs Manual,,,,,,0.4,,,0.1,,,0.2,,,0.4,,
+ROI Calculations,HC Costs,2026 HC costs,,"€21,092,253",,,"€18,383,972",,,"€15,941,289",,,"€16,082,094",,,"€14,486,910",,
+,,2027 HC costs,,"€27,419,929",,,"€23,819,084",,,"€20,593,675",,,"€20,711,723",,,"€18,572,983",,
+,,2028 HC costs,,"€35,645,907",,,"€30,884,729",,,"€26,641,778",,,"€26,730,240",,,"€23,884,878",,
+,,2029 HC costs,,"€46,339,679",,,"€40,070,067",,,"€34,504,312",,,"€34,554,312",,,"€30,790,341",,
+,Savings,2026 Savings,,,,,"€2,708,281",,,"€5,150,964",,,"€5,010,158",,,"€6,605,343",,
+,,2027 Savings,,,,,"€3,600,845",,,"€6,826,253",,,"€6,708,206",,,"€8,846,946",,
+,,2028 Savings,,,,,"€4,761,178",,,"€9,004,129",,,"€8,915,667",,,"€11,761,029",,
+,,2029 Savings,,,,,"€6,269,612",,,"€11,835,368",,,"€11,785,368",,,"€15,549,338",,
+,,,,,,,,,,,,,,,,,,
+,* UPH based on these files:,,https://docs.google.com/spreadsheets/d/1wd1sUJRxVS_jIxDFf1vPi_ZidwQXHKRUdEhZITixe_M/edit?gid=26619310#gid=26619310,,,,,,,,,,,,,,,
+,,,https://docs.google.com/spreadsheets/d/1LZNgXurN-F8T91jaVKKlQv3jif8aQuy1jSNw4n0N-Lg/edit?gid=1862343260#gid=1862343260,,,,,,,,,,,,,,,
