@@ -20,7 +20,7 @@ The analysis revealed a critical trade-off between upfront affordability and lon
 <img width="408" height="319" alt="image" src="https://github.com/user-attachments/assets/5b1e45db-c684-4b6a-8270-60eb1a2d28c6" />
 
 
-### 🔍 Comparative Analysis: Option B vs. Option D
+### Comparative Analysis: Option B vs. Option D
 As shown in the chart above:
 
 * **Low Barrier to Entry (Option B):** Option B requires the lowest initial investment (CapEx **€0.73 M**). It represents a "safe" short-term choice with minimal financial risk.
@@ -36,6 +36,6 @@ Based on this analysis, I recommend pursuing **Option D**.
 While Option B offers immediate cost savings, **Option D is the superior strategic choice** for the company's long-term development. The incremental CapEx is justified by the substantial increase in net benefit over the 4-year period.
 
 ---
-**📂 Files in this Repository:**
+**Files in this Repository:**
 * `Cumulative Net Benefit Analysis.xlsx`: The source model containing the dataset and calculation logic.
 * `Chart1/`: Picture containing high-resolution charts used in this analysis.
